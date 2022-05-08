@@ -10,7 +10,6 @@ describe('Navigate to page Top', () => {
 
 describe('Order of recommendations', () => {
 	it('should be in descending order of upvotes', () => {
-		let firstCount;
 		cy.resetDatabase();
 		cy.seedDatabase();
 
@@ -20,8 +19,3 @@ describe('Order of recommendations', () => {
 		cy.end();
 	});
 });
-
-// cy.get('article:first div:last').then((count) => {
-// 	firstCount = count.text();
-// 	cy.wrap(firstCount).as('firstCount');
-// });

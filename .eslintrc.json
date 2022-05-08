@@ -1,0 +1,25 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"airbnb",
+		"plugin:cypress/recommended",
+        "prettier"
+	],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": false
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["cypress", "react", "react-hooks", "prettier"],
+	"rules": {
+		"jest/expect-expect": "off",
+        "prettier/prettier": "error"
+	}
+}
